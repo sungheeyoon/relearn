@@ -1,6 +1,6 @@
 # 🧠 Relearn
 
-[한국어](./README.md) · **[Introduction site →](https://relearn-web-brown.vercel.app)**
+[한국어](./README.md) · **[Introduction site →](https://getrelearn.vercel.app)**
 
 > A personal knowledge system where you collect what you study, and AI organizes, links,
 > and — most importantly — **cuts the cost of re-learning what you forgot**.

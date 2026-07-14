@@ -1,6 +1,6 @@
 # 🧠 Relearn
 
-[English](./README.en.md) · **[소개 페이지 →](https://relearn-web-brown.vercel.app)**
+[English](./README.en.md) · **[소개 페이지 →](https://getrelearn.vercel.app)**
 
 > 공부한 것을 모아두면 AI가 정리·연결하고, **잊어버린 뒤 다시 배우는 비용**을 줄여주는 개인 지식 시스템.
 
