@@ -1,0 +1,10 @@
+# Obsidian workspace/cache (개인 설정은 동기화 제외, 설정 본체는 유지)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache
+.trash/
+
+# OS
+.DS_Store
+Thumbs.db
