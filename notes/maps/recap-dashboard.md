@@ -16,7 +16,7 @@ tags: [dashboard, recap, spaced-repetition]
 **복습 기한이 지난 노트를 오래된 순으로 자동 정렬해 보여주는 대시보드.**
 장기기억은 **간격 반복(spaced repetition, 점점 늘어나는 간격으로 복습)** + **인출 연습(active recall, 스스로 꺼내 설명 = Feynman)** 으로 만들어진다. 이 보드는 "지금 뭘 복습해야 하나"를 눈으로 보게 해서 그 간격을 놓치지 않게 한다.
 
-> 리캡 방법은 CLAUDE.md의 **Recap Loop**(Feynman 질문 → 평가 → understanding 제안)을 따른다. 자기보고로 이해도를 올리지 않는다.
+> 리캡 방법은 **`/recap` 스킬**(`.claude/skills/recap/SKILL.md` — Feynman 질문 → 평가 → understanding 제안)을 따른다. 자기보고로 이해도를 올리지 않는다.
 
 ## 📏 간격 스케줄 (이해도별)
 

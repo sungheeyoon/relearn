@@ -45,6 +45,10 @@ system itself, so using them as your first recap material teaches you the system
 
 ## How it feels
 
+Each workflow is a separate **Claude Code skill** (`.claude/skills/`) — invoke them directly as
+`/ingest`, `/recap`, `/deconstruct`, `/lint`, `/today`, or just say it in natural language as below.
+Skills load only when invoked, keeping the everyday session context light.
+
 **Ingest — sources to notes**
 > Me: I put today's reading in `sources/`. Ingest it.
 > AI: Read it, created 2 atomic notes. `closure` was merged into an existing note as a section
@@ -78,7 +82,8 @@ system itself, so using them as your first recap material teaches you the system
 | `inbox/` | Quick capture (emptied on ingest) |
 | `schema/` | Note template · behavior-layer rules |
 | `00-index.md` | Home dashboard |
-| `CLAUDE.md` | **The heart of the system** — every rule the AI follows (schema v1.0) |
+| `CLAUDE.md` | **The heart of the system** — schema & permission model (loaded every session) |
+| `.claude/skills/` | Workflow skills (`/ingest` `/recap` `/deconstruct` `/lint` `/today`) — loaded on demand |
 
 ## Design principles (summary)
 

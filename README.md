@@ -38,6 +38,10 @@ Raw Sources → AI Ingest → Atomic Notes → Maps(MOC) → Recap Loop → Long
 
 ## 이렇게 쓴다
 
+각 워크플로우는 **Claude Code 스킬**(`.claude/skills/`)로 분리돼 있다 — `/ingest`, `/recap`,
+`/deconstruct`, `/lint`, `/today`로 직접 부르거나, 아래처럼 자연어로 말하면 알아서 발동한다.
+호출될 때만 로드되므로 평소 세션 컨텍스트는 가볍다.
+
 **Ingest — 소스를 노트로**
 > 나: `sources/`에 오늘 공부한 글 넣었어. ingest 해줘.
 > AI: 읽고 atomic 노트 2개를 만들었어. `closure`는 기존 노트에 섹션으로 합쳤고(원자성 4-Test 미달),
@@ -69,7 +73,8 @@ Raw Sources → AI Ingest → Atomic Notes → Maps(MOC) → Recap Loop → Long
 | `inbox/` | 빠른 캡처 (ingest 때 비워짐) |
 | `schema/` | 노트 템플릿 · 행동층 규칙 |
 | `00-index.md` | 홈 대시보드 |
-| `CLAUDE.md` | **시스템의 심장** — AI가 따르는 모든 규칙 (스키마 v1.0) |
+| `CLAUDE.md` | **시스템의 심장** — 스키마·권한 모델 (매 세션 로드) |
+| `.claude/skills/` | 워크플로우 스킬 (`/ingest` `/recap` `/deconstruct` `/lint` `/today`) — 호출 시에만 로드 |
 
 ## 설계 원칙 (요약)
 
